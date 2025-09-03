@@ -1,0 +1,29 @@
+name: testApps
+on: push
+jobs: 
+
+     GetAppversion:
+      runs on: ubuntu-latest
+      steps:
+      name: git version
+      run: git version
+      name: docker version
+      run: docker --version
+      name: meven version
+      run: mvn version
+
+      pingGoogle:
+      runs on: ubuntu-latest
+      steps:
+      name: pingGoogle
+      run: ping -c 4 google.com
+      name: docker version
+      run: docker --version
+      name: meven version
+      run: mvn version
+
+      
+
+      
+
+      
